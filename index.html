@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanrio World</title>
+  <!-- Link to Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="Assets/sanriologo.png" alt="Sanrio Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#characters">Characters</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+        <li><a href="#episodes">Episodes</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Section -->
+  <main>
+    <!-- Home Section with Background Image -->
+    <section id="home" class="home-section">
+        <video autoplay muted loop class="background-video">
+          <source src="Assets/sanrioworld.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="home-content">
+          <h1 class="fade-in">Welcome to the World of Sanrio</h1>
+          <p class="slide-in">Discover the cutest characters and explore their magical universe!</p>
+          <button class="pulse"><a href= "https://en.wikipedia.org/wiki/Sanrio" target="_blank" >Learn More</a></button>
+        </div>
+      </section>
+      
+
+  <!-- Character Section -->
+  <section id="characters" class="section">
+    <h2 class="zoom-in">Meet the Characters</h2><br><br><br>
+    <div class="character-grid">
+      <div class="character-card left hover-scale">
+        <img src="Assets/Pompompurin.png" alt="Pompompurin">
+        <h3>Pompompurin</h3>
+        <p>A golden retriever with a laid-back attitude and love for pudding.</p>
+      </div>
+      <div class="character-card center hover-scale">
+        <img src="Assets/hellokitty.png" alt="Hello Kitty">
+        <h3>Hello Kitty</h3>
+        <p>The iconic Sanrio character known for her kindness and charm.</p>
+      </div>
+      <div class="character-card right hover-scale">
+        <img src="Assets/MyMelody.png" alt="My Melody">
+        <h3>My Melody</h3>
+        <p>A sweet bunny who loves helping her friends.</p>
+      </div>
+    </div>
+  </section><br><br><br>
+
+
+  <!-- Quiz Section -->
+  <section id="quiz" class="section">
+    <h2>Sanrio Character Quiz</h2>
+    <div id="quiz-container">
+      <!-- Left Side: Questions & Options -->
+      <div id="quiz-question-container">
+        <h3 id="quiz-question"></h3>
+        <div id="quiz-options"></div>
+        <p id="quiz-feedback"></p>
+        <button id="quiz-next" onclick="nextQuestion()">Next</button>
+      </div>
+      <!-- Right Side: Character Image -->
+      <img id="quiz-character-image" src="" alt="Character" />
+    </div>
+    <!-- Result Section -->
+    <div id="quiz-result" style="display: none;">
+      <h3 id="quiz-result-message"></h3>
+      <button id="quiz-restart" onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+    <!-- Hidden Questions -->
+    <div id="quiz-questions" style="display: none;">
+      <!-- Question 1 -->
+      <div class="quiz-data" data-character="Assets/hellokitty.png" data-question="When is Hello Kitty's birthday?" data-answer="November 1">
+        <span class="quiz-option">January 18</span>
+        <span class="quiz-option">October 31</span>
+        <span class="quiz-option">November 1</span>
+        <span class="quiz-option">July 10</span>
+      </div>
+      <!-- Question 2 -->
+      <div class="quiz-data" data-character="Assets/MyMelody.png" data-question="What is My Melody's favorite hobby?" data-answer="Sewing">
+        <span class="quiz-option">Sewing</span>
+        <span class="quiz-option">Playing pranks</span>
+        <span class="quiz-option">Baking cookies</span>
+        <span class="quiz-option">Swimming</span>
+      </div>
+      <!-- Question 3 -->
+      <div class="quiz-data" data-character="Assets/Kuromi.png" data-question="What is Kuromi’s birthday?" data-answer="October 31">
+        <span class="quiz-option">November 1</span>
+        <span class="quiz-option">January 18</span>
+        <span class="quiz-option">October 31</span>
+        <span class="quiz-option">July 10</span>
+      </div>
+      <!-- Question 4 -->
+      <div class="quiz-data" data-character="Assets/Keroppi.png" data-question="What is Keroppi's favorite activity?" data-answer="Playing games">
+        <span class="quiz-option">Flying</span>
+        <span class="quiz-option">Swimming</span>
+        <span class="quiz-option">Playing games</span>
+        <span class="quiz-option">Sleeping</span>
+      </div>
+      <!-- Question 5 -->
+      <div class="quiz-data" data-character="Assets/Gudetama.png" data-question="Where was Gudetama 'born'?" data-answer="A refrigerator">
+        <span class="quiz-option">Mariland</span>
+        <span class="quiz-option">A refrigerator</span>
+        <span class="quiz-option">London</span>
+        <span class="quiz-option">Donut Pond</span>
+      </div>
+    </div>
+  </section>
+
+
+<!-- Watch Some Episodes Section -->
+<section id="episodes" class="section">
+    <h2 class="zoom-in">Watch Some Episodes</h2>
+    <p>Enjoy these fun and adorable adventures with your favorite characters!</p>
+    <div class="video-grid">
+      <div class="video-card hover-scale">
+        <a href="https://youtu.be/pRJ-Dai3oB0?si=XGbDXvGPuIpOdSbe" target="_blank">
+          <img src="Assets/ep1thumbnail.png" alt="Episode 1 Thumbnail">
+          <div class="video-info">
+            <h3>Episode 1: The Perfect Gift</h3>
+            <p>Hello Kitty is looking for a perfect gift for her friend My Melody. 
+                Watch as she tries to find the ultimate special gift without accidentally ruining the surprise for a super sweet friend.  .</p>
+          </div>
+        </a>
+      </div>
+      <div class="video-card hover-scale">
+        <a href="https://www.youtube.com/watch?v=YyX0uKap7oc&list=PLN9X97LDR0XuH5iW6C4AAsiEDNMNke_Ks&index=2" target="_blank">
+          <img src="Assets/ep2thumbnail.png" alt="Episode 2 Thumbnail">
+          <div class="video-info">
+            <h3>Episode 2: Hello-ween </h3>
+            <p>Hello Kitty and friends celebrate Kuromi’s birthday. Watch to see what surprises they plan for 
+                 Halloween Queen herself as they scramble to make sure she has the most spooktacular birthday ever!.</p>
+          </div>
+        </a>
+      </div>
+      <div class="video-card hover-scale">
+        <a href="https://www.youtube.com/watch?v=NtR8jDK0Z2g&list=PLN9X97LDR0XuH5iW6C4AAsiEDNMNke_Ks&index=3" target="_blank">
+          <img src="Assets/ep3thumbnail.png" alt="Episode 3 Thumbnail">
+          <div class="video-info">
+            <h3>Episode 3: Birthday Mess</h3>
+            <p>It’s Hello Kitty’s birthday, and her friends are planning the BIGGEST birthday surprise! </p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Sanrio. All Rights Reserved.</p>
+    <div class="socials">
+      <a href="https://facebook.com/Sanrio" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://x.com/sanrio" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/sanrio/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </footer>
+</body>
+<script src="script.js"></script>
+
+</html>

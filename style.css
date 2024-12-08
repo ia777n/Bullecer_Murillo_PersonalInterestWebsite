@@ -388,7 +388,7 @@
   /* Quiz container layout */
 
   #quiz {
-    background: url('Assets/quizsection.png') no-repeat center center; /* Sets the background image */
+    background: url('Assets/Backgrounds/quizsection.png') no-repeat center center; /* Sets the background image */
     background-size: cover; /* Ensures the image covers the entire section */
     padding: 40px 20px;
   }
@@ -496,7 +496,7 @@
   /* Section styles */
   #episodes {
     text-align: center;
-    background: url('Assets/watchsection.png') no-repeat center center; /* Sets the background image */
+    background: url('Assets/Backgrounds/watchsection.png') no-repeat center center; /* Sets the background image */
     background-size: cover; /* Ensures the image covers the entire section */
     padding: 40px 20px;
   }
@@ -553,106 +553,102 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
 
-/* Styling for the creator section */
-#creator-section {
-  font-family: 'Fredoka One', sans-serif; /* Match font style */
-  background: url('Assets/homebg.png') no-repeat center center; /* Sets the background image */
-  background-size: cover; /* Ensures the image covers the entire section */
-  padding: 40px 20px;
-  text-align: center;
-}
+  /* Styling for the creator section */
+  #creator-section {
+    font-family: 'Fredoka One', sans-serif; /* Match font style */
+    background: url('Assets/Backgrounds/homebg.png') no-repeat center center; /* Sets the background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    padding: 40px 20px;
+    text-align: center;
+  }
 
-.creator-container {
-  font-family: 'Fredoka One', sans-serif;
-  max-width: 1200px; /* Ensure enough space */
-  margin: 0 auto;
-}
+  .creator-container {
+    font-family: 'Fredoka One', sans-serif;
+    max-width: 1200px; /* Ensure enough space */
+    margin: 0 auto;
+  }
 
-.section-title {
-  font-size: 2em;
-  color: #ff66b2;
-  margin-bottom: 20px;
-}
+  .section-title {
+    font-size: 2em;
+    color: #ff66b2;
+    margin-bottom: 20px;
+  }
 
-/* Container to display creators side by side */
-.creator-profiles {
-  font-family: 'Fredoka One', sans-serif;
-  display: flex;
-  justify-content: center; /* Center items */
-  gap: 20px; /* Reduce spacing between creators */
-  margin-bottom: 40px;
-  flex-wrap: wrap; /* Allow wrapping if necessary */
-}
-
-
-/* Each creator's profile */
-.creator-profile {
-  font-family: 'Fredoka One', sans-serif; /* Match font style */
-  display: flex;
-  flex-direction: column; /* Align items vertically */
-  align-items: center; /* Center all content horizontally */
-  gap: 20px;
-  background-color: #ffeaf2; /* Light pink background */
-  padding: 20px;
-  border-radius: 10px;
-  border: 2px solid #ff66b2;
-  width: 250px; /* Set width of each profile */
-  margin: 0; /* Remove unnecessary margins */
-}
-
-.creator-image-container {
-  display: flex;
-  justify-content: center;
-}
-
-.creator-image {
-  width: 150px; /* Set image size */
-  height: 150px; /* Set image size */
-  border-radius: 50%; /* Circle shape */
-  object-fit: cover;
-  border: 2px solid #ff66b2; /* Add border around the image */
-}
-
-.creator-info {
-  font-family: 'Fredoka One', sans-serif;
-  text-align: center; /* Center text */
-}
-
-.creator-info h3 {
-  font-size: 1.5em;
-  color: #ff66b2;
-}
-
-.creator-info p {
-  font-size: 1.2em;
-  color: #ff69b4;
-}
-
-.creator-info p strong {
-  color: #ff66b2; /* Highlight the labels */
-}
-
-/* Back to main page link */
-.back-link {
-  display: inline-block;
-  margin-top: 20px;
-  font-size: 1.2em;
-  text-decoration: none;
-  color: #ff69b4;
-  border: 2px solid #ff69b4;
-  padding: 10px 20px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.back-link:hover {
-  background-color: #ff69b4;
-  color: #fff;
-}
+  /* Container to display creators side by side */
+  .creator-profiles {
+    font-family: 'Fredoka One', sans-serif;
+    display: flex;
+    justify-content: center; /* Center items */
+    gap: 20px; /* Reduce spacing between creators */
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+  }
 
 
+  /* Each creator's profile */
+  .creator-profile {
+    font-family: 'Fredoka One', sans-serif; /* Match font style */
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center all content horizontally */
+    gap: 20px;
+    background-color: #ffeaf2; /* Light pink background */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ff66b2;
+    width: 250px; /* Set width of each profile */
+    margin: 0; /* Remove unnecessary margins */
+  }
 
+  .creator-image-container {
+    display: flex;
+    justify-content: center;
+  }
 
+  .creator-image {
+    width: 150px; /* Set image size */
+    height: 150px; /* Set image size */
+    border-radius: 50%; /* Circle shape */
+    object-fit: cover;
+    border: 2px solid #ff66b2; /* Add border around the image */
+  }
+
+  .creator-info {
+    font-family: 'Fredoka One', sans-serif;
+    text-align: center; /* Center text */
+  }
+
+  .creator-info h3 {
+    font-size: 1.5em;
+    color: #ff66b2;
+  }
+
+  .creator-info p {
+    font-size: 1.2em;
+    color: #ff69b4;
+  }
+
+  .creator-info p strong {
+    color: #ff66b2; /* Highlight the labels */
+  }
+
+  /* Back to main page link */
+  .back-link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #ff69b4;
+    border: 2px solid #ff69b4;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .back-link:hover {
+    background-color: #ff69b4;
+    color: #fff;
+  }
 
 
   /* Footer */

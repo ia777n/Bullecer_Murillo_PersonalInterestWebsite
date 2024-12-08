@@ -33,7 +33,7 @@ document.querySelectorAll('nav ul li a').forEach(link => {
   const characters = [
     {
       name: 'Hello Kitty',
-      img: 'Assets/hellokitty.png',
+      img: 'Assets/Character Images/hellokitty.png',
       desc: 'The iconic Sanrio character known for her kindness and charm.',
       details: {
         hobbies: 'Baking cookies, making friends',
@@ -44,7 +44,7 @@ document.querySelectorAll('nav ul li a').forEach(link => {
     },
     {
       name: 'My Melody',
-      img: 'Assets/MyMelody.png',
+      img: 'Assets/Character Images/MyMelody.png',
       desc: 'A sweet bunny who loves helping her friends.',
       details: {
         hobbies: 'Sewing, spending time with her grandma',
@@ -55,7 +55,7 @@ document.querySelectorAll('nav ul li a').forEach(link => {
     },
     {
       name: 'Kuromi',
-      img: 'Assets/Kuromi.png',
+      img: 'Assets/Character Images/Kuromi.png',
       desc: 'A mischievous and sassy rival of My Melody.',
       details: {
         hobbies: 'Writing in her diary, pulling pranks',
@@ -66,7 +66,7 @@ document.querySelectorAll('nav ul li a').forEach(link => {
     },
     {
       name: 'Cinnamoroll',
-      img: 'Assets/Cinnamoroll.png',
+      img: 'Assets/Character Images/Cinnamoroll.png',
       desc: 'A cheerful puppy who flies through the sky with his big ears.',
       details: {
         hobbies: 'Cloud-watching, flying',
@@ -77,7 +77,7 @@ document.querySelectorAll('nav ul li a').forEach(link => {
     },
     {
       name: 'Pompompurin',
-      img: 'Assets/Pompompurin.png',
+      img: 'Assets/Character Images/Pompompurin.png',
       desc: 'A golden retriever with a laid-back attitude and love for pudding.',
       details: {
         hobbies: 'Napping, collecting shoes',
@@ -88,7 +88,7 @@ document.querySelectorAll('nav ul li a').forEach(link => {
     },
     {
       name: 'Badtz-Maru',
-      img: 'Assets/BadtzMaru.png',
+      img: 'Assets/Character Images/BadtzMaru.png',
       desc: 'A mischievous penguin with a rebellious streak.',
       details: {
         hobbies: 'Collecting fish bones, dreaming of ruling the world',
@@ -99,7 +99,7 @@ document.querySelectorAll('nav ul li a').forEach(link => {
     },
     {
       name: 'Pochacco',
-      img: 'Assets/Pochacco.png',
+      img: 'Assets/Character Images/Pochacco.png',
       desc: 'A curious and playful puppy who loves adventures.',
       details: {
         hobbies: 'Playing basketball, taking long walks',
@@ -110,7 +110,7 @@ document.querySelectorAll('nav ul li a').forEach(link => {
     },
     {
       name: 'Chococat',
-      img: 'Assets/Chococat.png',
+      img: 'Assets/Character Images/Chococat.png',
       desc: 'A curious cat with a love for gadgets.',
       details: {
         hobbies: 'Inventing gadgets, solving mysteries',
@@ -121,7 +121,7 @@ document.querySelectorAll('nav ul li a').forEach(link => {
     },
     {
       name: 'Gudetama',
-      img: 'Assets/Gudetama.png',
+      img: 'Assets/Character Images/Gudetama.png',
       desc: 'A lazy egg who prefers to do nothing.',
       details: {
         hobbies: 'Sleeping, being lazy',
@@ -132,7 +132,7 @@ document.querySelectorAll('nav ul li a').forEach(link => {
     },
     {
       name: 'Keroppi',
-      img: 'Assets/Keroppi.png',
+      img: 'Assets/Character Images/Keroppi.png',
       desc: 'A cheerful frog who loves singing and swimming.',
       details: {
         hobbies: 'Playing games, singing',

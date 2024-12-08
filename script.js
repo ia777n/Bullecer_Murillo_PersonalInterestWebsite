@@ -20,6 +20,14 @@ document.querySelectorAll('nav ul li a').forEach(link => {
     });
   });
   
+  // Sidebar Toggle Functionality
+  function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+
+    // Toggle the sidebar class to open/close
+    sidebar.classList.toggle("open");
+  }
+
   // Select elements
   const characterGrid = document.querySelector('.character-grid');
   const characters = [

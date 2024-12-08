@@ -13,9 +13,17 @@
 <body>
   <!-- Header -->
   <header>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu" onclick="toggleSidebar()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
     <div class="logo">
       <img src="Assets/sanriologo.png" alt="Sanrio Logo">
     </div>
+
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -25,6 +33,22 @@
         <li><a href="creator.html" class="creator-link">About the Creators</a></li>
       </ul>
     </nav>
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+      <img src="Assets/sanriologo.png" alt="Sanrio Logo" class="sidebar-logo">
+      <button class="close-btn" onclick="toggleSidebar()">&#10005;</button>
+    </div>
+    <ul>
+        <li><a href="#home" onclick="toggleSidebar()"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#characters" onclick="toggleSidebar()"><i class="fas fa-users"></i> Characters</a></li>
+        <li><a href="#quiz" onclick="toggleSidebar()"><i class="fas fa-question-circle"></i> Quiz</a></li>
+        <li><a href="#episodes" onclick="toggleSidebar()"><i class="fas fa-tv"></i> Episodes</a></li>
+        <li><a href="creator.html" onclick="toggleSidebar()"><i class="fas fa-user-circle"></i> About the Creators</a></li>
+    </ul>
+  </div>
   </header>
 
   <!-- Main Section -->

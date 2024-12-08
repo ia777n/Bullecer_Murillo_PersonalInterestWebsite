@@ -1,60 +1,60 @@
-/* Global Fix to Prevent Horizontal Scrolling */
+/* Prevent Horizontal Scrolling */
 body, html {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    box-sizing: border-box; /* Include padding and border in width/height calculations */
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
-/* Header Styles */
+/* Header */
 header {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    justify-content: space-between; /* Adjust alignment */
+    flex-wrap: wrap;
+    justify-content: space-between;
     align-items: center;
-    width: 100%; /* Full width of viewport */
+    width: 100%;
     padding: 10px;
-    box-sizing: border-box; /* Include padding in the width */
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 header .logo img {
-    height: 60px; /* Default logo size */
-    max-width: 100%; /* Prevent logo from exceeding the header width */
+    height: 60px;
+    max-width: 100%;
 }
 
 .hamburger-menu {
-    display: none; /* Hidden by default */
-    position: relative; /* Prevent absolute positioning from causing overflow */
+    display: none;
+    position: relative;
     top: 0;
     left: 0;
 }
 
 nav ul {
-    display: flex; /* Default to showing nav links */
+    display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* Sidebar Styles */
+/* Sidebar */
 .sidebar {
-    width: 250px; /* Default sidebar width */
-    max-width: 100%; /* Prevent sidebar from exceeding viewport width */
+    width: 250px;
+    max-width: 100%;
 }
 
-/* Video Grid Styles */
+/* Video Grid */
 .video-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Default to three columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    width: 100%; /* Ensure grid spans full width */
-    box-sizing: border-box; /* Include padding in width calculations */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Responsive Styles */
 
-/* For devices with a max width of 1024px (Tablets and smaller) */
+/* Tablets and smaller (max-width: 1024px) */
 @media screen and (max-width: 1024px) {
     header {
         justify-content: center;
@@ -62,42 +62,42 @@ nav ul {
     }
 
     header .logo img {
-        height: 45px; /* Slightly smaller logo */
+        height: 45px;
     }
 
     .hamburger-menu {
-        display: flex; /* Show hamburger menu */
+        display: flex;
         position: absolute;
-        top: 15px; /* Positioned near the top */
-        left: 15px; /* Moved to the left side */
+        top: 15px;
+        left: 15px;
     }
 
     nav ul {
-        display: none; /* Hide nav-links in smaller screens */
+        display: none;
     }
 
     .video-grid {
-        grid-template-columns: repeat(2, 1fr); /* Two columns */
-        gap: 1rem; /* Adjust spacing */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 }
 
-/* For devices with a max width of 768px (Large Phones and smaller) */
+/* Large Phones and smaller (max-width: 768px) */
 @media screen and (max-width: 768px) {
     header {
-        flex-wrap: wrap; /* Stack elements if necessary */
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
     .hamburger-menu {
-        display: flex; /* Show hamburger menu */
+        display: flex;
         position: absolute;
-        top: 15px; /* Positioned near the top */
-        left: 15px; /* Moved to the left side */
+        top: 15px;
+        left: 15px;
     }
 
     .sidebar {
-        width: 200px; /* Smaller sidebar */
+        width: 200px;
     }
 
     .sidebar-logo {
@@ -105,80 +105,80 @@ nav ul {
     }
 
     .character-card {
-        width: 150px; /* Smaller cards */
+        width: 150px;
     }
 
     .creator-profiles {
-        flex-wrap: wrap; /* Allow wrapping */
-        justify-content: center; /* Center content */
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .creator-profile {
-        width: 200px; /* Smaller profiles */
+        width: 200px;
     }
 
     .video-grid {
-        grid-template-columns: 1fr; /* Single column */
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
     #quiz-container {
-        flex-direction: column; /* Stack vertically */
+        flex-direction: column;
         align-items: center;
     }
 
     #quiz-character-image {
         margin: 10px 0;
-        max-width: 200px; /* Smaller image */
+        max-width: 200px;
     }
 }
 
-/* For devices with a max width of 480px (Small Phones) */
+/* Small Phones (max-width: 480px) */
 @media screen and (max-width: 480px) {
     body {
-        margin-top: 50px; /* Adjust for mobile layout */
+        margin-top: 50px;
     }
 
     header {
-        flex-direction: column; /* Stack header items */
+        flex-direction: column;
         align-items: center;
     }
 
     header .logo img {
-        height: 35px; /* Smaller logo */
-        max-width: 100%; /* Ensure logo fits within viewport */
+        height: 35px;
+        max-width: 100%;
     }
 
     .hamburger-menu {
-        display: flex; /* Show hamburger menu */
+        display: flex;
         position: absolute;
-        top: 10px; /* Positioned near the top */
-        left: 10px; /* Moved to the left side */
+        top: 10px;
+        left: 10px;
     }
 
     .sidebar ul li {
-        padding: 10px 0; /* Smaller padding */
+        padding: 10px 0;
     }
 
     .character-card img {
-        width: 80px; /* Smaller images */
+        width: 80px;
     }
 
     .creator-profile {
-        width: 180px; /* Even smaller profiles */
+        width: 180px;
     }
 
     .back-link {
         font-size: 1em;
-        padding: 8px 15px; /* Smaller button */
+        padding: 8px 15px;
     }
 
     footer .socials a {
-        font-size: 1.2em; /* Smaller icons */
+        font-size: 1.2em;
     }
 
     #quiz-next, #quiz-restart {
-        font-size: 0.9em; /* Smaller buttons */
+        font-size: 0.9em;
         padding: 8px 15px;
     }
 }

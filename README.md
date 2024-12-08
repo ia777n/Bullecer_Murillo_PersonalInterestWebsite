@@ -66,6 +66,4 @@ Sanrio World is designed to offer a delightful browsing experience for Sanrio en
 - **Ian Benedict Z. Murillo**
 - **Ian Clement P. Bullecer**
 
----
 
-Enjoy exploring **Sanrio World** and immerse yourself in the delightful realm of Sanrio! 😊

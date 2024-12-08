@@ -10,6 +10,15 @@ document.querySelectorAll('nav ul li a').forEach(link => {
       });
     });
   });
+
+  document.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (href.endsWith('.html')) {
+        window.location.href = href; // Force navigation
+      }
+    });
+  });
   
   // Select elements
   const characterGrid = document.querySelector('.character-grid');

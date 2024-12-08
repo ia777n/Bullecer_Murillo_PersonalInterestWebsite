@@ -388,8 +388,9 @@
   /* Quiz container layout */
 
   #quiz {
-    background-color: #ffc1cc; /* A distinct light pink shade */
-    padding: 40px 0; /* Optional: Add some spacing around the section */
+    background: url('Assets/quizsection.png') no-repeat center center; /* Sets the background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    padding: 40px 20px;
   }
 
 
@@ -495,8 +496,9 @@
   /* Section styles */
   #episodes {
     text-align: center;
-    padding: 2rem;
-    background-color: #f9f9f9;
+    background: url('Assets/watchsection.png') no-repeat center center; /* Sets the background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    padding: 40px 20px;
   }
 
 /* Video grid */
@@ -557,8 +559,8 @@
   background-size: cover; /* Ensures the image covers the entire section */
   padding: 40px 20px;
   text-align: center;
+  font-family: 'Fredoka One', sans-serif; /* Match font style */
 }
-
 
 .creator-container {
   max-width: 1200px; /* Ensure enough space */
@@ -574,11 +576,12 @@
 /* Container to display creators side by side */
 .creator-profiles {
   display: flex;
-  justify-content: space-between; /* Space out the profiles */
-  gap: 40px; /* Add spacing between the profiles */
+  justify-content: center; /* Center items */
+  gap: 20px; /* Reduce spacing between creators */
   margin-bottom: 40px;
-  flex-wrap: nowrap; /* Prevent wrapping */
+  flex-wrap: wrap; /* Allow wrapping if necessary */
 }
+
 
 /* Each creator's profile */
 .creator-profile {
@@ -591,6 +594,8 @@
   border-radius: 10px;
   border: 2px solid #ff66b2;
   width: 250px; /* Set width of each profile */
+  font-family: 'Fredoka One', sans-serif; /* Match font style */
+  margin: 0; /* Remove unnecessary margins */
 }
 
 .creator-image-container {
@@ -608,7 +613,6 @@
 
 .creator-info {
   text-align: center; /* Center text */
-  font-family: Arial, sans-serif;
 }
 
 .creator-info h3 {
@@ -618,6 +622,7 @@
 
 .creator-info p {
   font-size: 1.2em;
+  color: #ff69b4;
 }
 
 .creator-info p strong {
@@ -641,6 +646,7 @@
   background-color: #ff69b4;
   color: #fff;
 }
+
 
 
 

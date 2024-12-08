@@ -342,3 +342,5 @@ shuffledQuestions = shuffleArray([...quizData]);
 // Initial quiz load
 loadQuestion(currentQuestionIndex);
 
+
+

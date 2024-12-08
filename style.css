@@ -417,10 +417,12 @@
 
 /* Styling for the creator section */
 #creator-section {
-  background-color: #fff0f5; /* Light pink background */
+  background: url('Assets/homebg.png') no-repeat center center; /* Sets the background image */
+  background-size: cover; /* Ensures the image covers the entire section */
   padding: 40px 20px;
   text-align: center;
 }
+
 
 .creator-container {
   max-width: 1200px; /* Ensure enough space */
